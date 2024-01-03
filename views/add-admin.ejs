@@ -1,0 +1,23 @@
+<%- include('includes/admin-panel/top-most.ejs') %>
+    <title>Bootstrap demo</title>
+<%- include('includes/admin-panel/nav-bar.ejs') %>
+    <div class="container mt-4 mb-4">
+        <h1 class="text-center">All Books</h1>
+        <form action="/add-admins" method="post">
+            <div class="mb-3">
+                <label for="ISBN" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="BookName" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="mb-3">
+                <label for="Author" class="form-label">Password</label>
+                <input type="text" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form> 
+    </div>
+
+<%- include('includes/admin-panel/footer.ejs') %>

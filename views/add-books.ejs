@@ -1,0 +1,39 @@
+<%- include('includes/admin-panel/top-most.ejs') %>
+    <title>Bootstrap demo</title>
+    <%- include('includes/admin-panel/nav-bar.ejs') %>
+        <div class="container mb-3 mt-4">
+            <h1 class="text-center"> Book Review</h1>
+            <form action="/book-review" method="post">
+                <div class="mb-3">
+                    <label for="ISBN" class="form-label">ISBN Number</label>
+                    <input type="text" class="form-control" id="ISBN-number" aria-describedby="" name="ISBN">
+                </div>
+                <div class="mb-3">
+                    <label for="BookName" class="form-label">Book Name</label>
+                    <input type="text" class="form-control" id="BookName" name="bookName">
+                </div>
+                <div class="mb-3">
+                    <label for="Author" class="form-label">Author Name</label>
+                    <input type="text" class="form-control" id="authorName" name="authorName">
+                </div>
+                <div class="mb-3">
+                    <label for="Date" class="form-label">Read Date</label>
+                    <input type="date" class="form-control" id="authorName" name="readDate">
+                </div>
+                <div class="mb-3">
+                    <label for="Rating" class="form-label">Rating</label>
+                    <input type="number" class="form-control" id="Rating" name="rating">
+                </div>
+                <div class="mb-3">
+                    <label for="link" class="form-label">Amazon Link</label>
+                    <input type="text" class="form-control" id="link" name="link">
+                </div>
+                <div class="mb-3">
+                    <label for="Notes" class="form-label">Book Notes</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="bookreview"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+
+        <%- include('includes/admin-panel/footer.ejs') %>

@@ -1,0 +1,32 @@
+<%- include('includes/admin-panel/top-most.ejs') %>
+    <title>Bootstrap demo</title>
+<%- include('includes/admin-panel/nav-bar.ejs') %>
+    <div class="container mt-4 mb-4">
+        <h1 class="text-center">All Books</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Edit / Delete</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+                <% 
+                admin.forEach((admins)=> {
+                %>
+              <tr>
+                <td><%- admins.name %></td>
+                <td><%- admins.username %></td>
+                <td>edit/delete</td>
+              </tr>
+              <%
+            }) 
+            %>
+            </tbody>
+            
+          </table>
+    </div>
+
+<%- include('includes/admin-panel/footer.ejs') %>

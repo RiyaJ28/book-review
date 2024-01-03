@@ -1,0 +1,43 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body class="row">
+
+    <nav class="navbar admin-panel-nav">
+        <div class="container-fluid">
+            <span class="navbar-brand p-2 mb-0 h1 admin-panel-nav">Admin Panel</span>
+        </div>
+    </nav>
+    <div class="col-md-2 left-nav">
+        <ul>
+
+            <li class="menu">
+                <p>
+                    <a class="sidenav-link" data-bs-toggle="collapse" href="#manageStudents" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">Book Management</a>
+                </p>
+                <div class="collapse" id="manageStudents">
+                    <ul>
+                        <li class="menu"><a class="sidenav-link" href="/add-books">Add Books</a></li>
+                        <li class="menu"><a class="sidenav-link" href="/all-books">All Books</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="menu">
+                <p>
+                    <a class="sidenav-link" data-bs-toggle="collapse" href="#manageClass" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">Admin Management</a>
+                </p>
+                <div class="collapse" id="manageClass">
+                    <ul>
+                        <li class="menu"><a class="sidenav-link" href="/add-admin">Add Admin</a></li>
+                        <li class="menu"><a class="sidenav-link" href="/all-admins">All admins</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-10">

@@ -1,0 +1,54 @@
+body{
+    overflow-x: hidden;
+}
+.dark{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000000 ;
+    color: #F4EAE0 ;
+}
+.font-white{
+    color: #F4EAE0 ;
+}
+.white{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:  #F4EAE0 ;
+    color: #000000;
+}
+
+
+/* login-page */
+.login-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-form{
+    width: 40%;
+}
+
+/* admin panel */
+.admin-panel-nav{
+    background-color: #000000;
+    color: #F4EAE0;
+}
+.left-nav{
+    background-color: #F4DFC8;
+    color: #000000;
+    min-height: 670px;
+}
+.sidenav-link{
+    color: #000000;
+    list-style: none;
+    text-decoration: none;
+}
+menu{
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
