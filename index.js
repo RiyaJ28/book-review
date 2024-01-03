@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 
 const db = new pg.Client({
-  user: "postgres",
+  user: "postgres" || "books_0o21_user",
   host: "localhost" || "dpg-cmar516n7f5s7396c0sg-a",
   database: "Books" || "books_0o21",
   password: "1234" || "OUQiIxMpajgPtpSzqJ0DjWOiaUxthICX",
