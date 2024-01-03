@@ -14,7 +14,7 @@ const db = new pg.Client({
   host: "localhost",
   database: "Books",
   password: "1234",
-  port: 5432,
+  port: 5432 ||  process.env.POSTGRESQL_EXTERNAL_URL,
 });
 
 db.connect();
