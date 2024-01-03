@@ -11,10 +11,11 @@ const app = express();
 
 const db = new pg.Client({
   user: "postgres",
-  host: "localhost",
-  database: "Books",
-  password: "1234",
-  port: 5432 ||  process.env.POSTGRESQL_EXTERNAL_URL,
+  host: "localhost" || "dpg-cmar516n7f5s7396c0sg-a",
+  database: "Books" || "books_0o21",
+  password: "1234" || "OUQiIxMpajgPtpSzqJ0DjWOiaUxthICX",
+  port: 5432,
+  url: "postgres://books_0o21_user:OUQiIxMpajgPtpSzqJ0DjWOiaUxthICX@dpg-cmar516n7f5s7396c0sg-a.oregon-postgres.render.com/books_0o21"
 });
 
 db.connect();
